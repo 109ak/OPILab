@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+#include <stdio.h>
+#include <conio.h>
+#include "windows.h"
+
+using namespace std;
+
+int main()
+{
+    // Y = e^x + |x| + x^2
+    // x1 = 2; x2 = 3; x++ = 0.1
+
+    float x, y;
+    x = 2;
+    while (x <= 3)
+    {
+        y = exp(x) + fabs(x) + pow(x, 2);
+        cout << setw(10) << "x=" << x << setw(10) << "y=" << y << endl;
+        x += 0.1;
+    }
+}
